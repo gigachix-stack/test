@@ -1,0 +1,4 @@
+.card,.task{animation:in .4s}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.card,.chip,button{transition:transform .15s}
+.card:hover,.chip:hover{transform:scale(1.03)}

@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Конструктор — Интерактивный конструктор задач</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"></head><body>
+<h1>Интерактивный конструктор задач</h1>
+<nav><a href="index.html">Главная</a><a href="index.html#all">Все задания</a><a href="builder.html">Создать</a><a href="index.html#mine">Мои задания</a></nav>
+<h2>Конструктор</h2>
+<div id="editor">
+<label>Тип: <select id="type"></select></label> <label>Сложность: <select id="level"></select></label><br>
+<input id="title" placeholder="Название задания" size="40"><br>
+<input id="instr" placeholder="Инструкция" size="60"><br>
+<small id="hint"></small><textarea id="text"></textarea>
+<label id="cnt">Сколько элементов выбирать из банка (пусто — все): <input id="count" type="number" min="1" style="width:60px"></label>
+<div id="extra"><label>Номер ошибочной строки: <input id="bad" type="number" min="1" value="3" style="width:60px"></label><br><input id="expl" placeholder="Пояснение к ошибке" size="60" value="Используется number вместо numbers."></div>
+<button id="toPrev">Предпросмотр</button> <button id="save">Сохранить задание</button></div>
+<div id="preview" hidden><button id="toEdit">← Редактор</button><div id="pv"></div></div>
+<script src="js/tasks.js"></script><script src="js/checker.js"></script><script src="js/builder.js"></script></body></html>
